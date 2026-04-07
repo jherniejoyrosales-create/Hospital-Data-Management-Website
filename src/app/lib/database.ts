@@ -2,6 +2,77 @@ import { supabase, isSupabaseConfigured, isLocalStorageMode, isIndexedDBMode, ge
 import { indexedDBStorage } from './indexeddb';
 import { PatientRecord } from './types';
 
+const API_BASE_URL = 'http://localhost:3001/api';
+
+// Check if API server is available
+export async function isAPIServerAvailable(): Promise<boolean> {
+  try {
+    const response = await fetch(`${API_BASE_URL}/patients`, { method: 'GET' });
+    return response.ok;
+  } catch {
+    return false;
+  }
+}
+
+// Use API mode for cross-browser data sharing
+export const isAPIMode = () => getStorageMode() === 'api';
+
+// Deduplicate patients by patientId (keep the most recent entry)
+export async function deduplicatePatients(): Promise<{ success: boolean; message: string; removedCount: number }> {
+  if (!isLocalStorageMode()) {
+    return { success: false, message: 'Deduplication only works in local storage mode', removedCount: 0 };
+  }
+
+  try {
+    const stored = localStorage.getItem('hospitalPatients');
+    if (!stored) {
+      return { success: true, message: 'No data to deduplicate', removedCount: 0 };
+    }
+
+    const patients: PatientRecord[] = JSON.parse(stored);
+    if (!Array.isArray(patients)) {
+      return { success: false, message: 'Invalid data format', removedCount: 0 };
+    }
+
+    const originalCount = patients.length;
+
+    // Create a map to track unique patients by patientId, keeping the most recent (by confinementStart date)
+    const uniquePatients = new Map<string, PatientRecord>();
+
+    patients.forEach(patient => {
+      const key = patient.patientId;
+      const existing = uniquePatients.get(key);
+
+      if (!existing) {
+        uniquePatients.set(key, patient);
+      } else {
+        // Keep the one with the more recent confinementStart date
+        const existingDate = new Date(existing.confinementStart);
+        const currentDate = new Date(patient.confinementStart);
+
+        if (currentDate > existingDate) {
+          uniquePatients.set(key, patient);
+        }
+      }
+    });
+
+    const deduplicatedPatients = Array.from(uniquePatients.values());
+    const removedCount = originalCount - deduplicatedPatients.length;
+
+    // Save the deduplicated data
+    localStorage.setItem('hospitalPatients', JSON.stringify(deduplicatedPatients));
+
+    return {
+      success: true,
+      message: `Removed ${removedCount} duplicate patients. Kept ${deduplicatedPatients.length} unique patients.`,
+      removedCount
+    };
+  } catch (error) {
+    console.error('Error deduplicating patients:', error);
+    return { success: false, message: 'Error during deduplication', removedCount: 0 };
+  }
+}
+
 // Initialize the database table if it doesn't exist
 export async function initializeDatabase() {
   if (isIndexedDBMode()) {
@@ -24,6 +95,11 @@ export async function initializeDatabase() {
 
   if (isLocalStorageMode()) {
     console.log('Local storage mode active');
+    return;
+  }
+
+  if (isAPIMode()) {
+    console.log('API mode active - no Supabase initialization required');
     return;
   }
 
@@ -96,6 +172,19 @@ export async function migrateLocalStorageToSupabase() {
 
 // Fetch all patients
 export async function fetchPatients(): Promise<PatientRecord[]> {
+  if (isAPIMode()) {
+    // Use local API server for cross-browser sync
+    try {
+      const response = await fetch(`${API_BASE_URL}/patients`);
+      if (response.ok) {
+        return await response.json();
+      }
+    } catch (e) {
+      console.error('Error fetching from API:', e);
+    }
+    return [];
+  }
+
   if (isIndexedDBMode()) {
     // Use IndexedDB for persistent storage
     return await indexedDBStorage.getAll();
@@ -138,6 +227,23 @@ export async function fetchPatients(): Promise<PatientRecord[]> {
 export async function addPatient(patient: Omit<PatientRecord, 'id'>): Promise<PatientRecord | null> {
   const id = `${Date.now()}-${Math.floor(Math.random() * 10000)}`;
   const patientWithId = { id, ...patient };
+
+  if (isAPIMode()) {
+    // Use local API server for cross-browser sync
+    try {
+      const response = await fetch(`${API_BASE_URL}/patients`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(patientWithId)
+      });
+      if (response.ok) {
+        return await response.json();
+      }
+    } catch (error) {
+      console.error('Error adding patient via API:', error);
+    }
+    return null;
+  }
 
   if (isIndexedDBMode()) {
     // Use IndexedDB for persistent storage
@@ -189,6 +295,24 @@ export async function addPatient(patient: Omit<PatientRecord, 'id'>): Promise<Pa
 
 // Update a patient
 export async function updatePatient(patient: PatientRecord): Promise<PatientRecord | null> {
+  if (isAPIMode()) {
+    try {
+      const response = await fetch(`${API_BASE_URL}/patients/${patient.id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(patient),
+      });
+      if (response.ok) {
+        return await response.json();
+      }
+      console.error('API updatePatient failed', response.statusText);
+      return null;
+    } catch (error) {
+      console.error('Error updating patient via API:', error);
+      return null;
+    }
+  }
+
   if (isIndexedDBMode()) {
     // Use IndexedDB for persistent storage
     try {
@@ -240,6 +364,18 @@ export async function updatePatient(patient: PatientRecord): Promise<PatientReco
   }
 }
 export async function deletePatient(id: string): Promise<boolean> {
+  if (isAPIMode()) {
+    try {
+      const response = await fetch(`${API_BASE_URL}/patients/${id}`, {
+        method: 'DELETE',
+      });
+      return response.ok;
+    } catch (error) {
+      console.error('Error deleting patient via API:', error);
+      return false;
+    }
+  }
+
   if (isIndexedDBMode()) {
     // Use IndexedDB for persistent storage
     try {
@@ -289,6 +425,21 @@ export async function deletePatient(id: string): Promise<boolean> {
 
 // Get a single patient by ID
 export async function getPatientById(id: string): Promise<PatientRecord | null> {
+  if (isAPIMode()) {
+    try {
+      const response = await fetch(`${API_BASE_URL}/patients`);
+      if (!response.ok) {
+        console.error('Error fetching patient via API:', response.statusText);
+        return null;
+      }
+      const patients: PatientRecord[] = await response.json();
+      return patients.find((p) => p.id === id) || null;
+    } catch (error) {
+      console.error('Error reading patient via API:', error);
+      return null;
+    }
+  }
+
   if (isIndexedDBMode()) {
     // Use IndexedDB for persistent storage
     try {
@@ -363,4 +514,426 @@ export function subscribeToPatients(callback: (patients: PatientRecord[]) => voi
   return () => {
     supabase.removeChannel(channel);
   };
+}
+
+// ICD CODE MANAGEMENT FUNCTIONS
+// ========================================
+
+// Fetch all ICD codes
+export async function fetchICDCodes(): Promise<ICDCodeRate[]> {
+  if (!isSupabaseConfigured()) {
+    // Fallback to localStorage
+    const stored = localStorage.getItem('hospitalICDCodes');
+    if (stored) {
+      try {
+        return JSON.parse(stored);
+      } catch (e) {
+        console.error('Error parsing localStorage ICD codes:', e);
+        return [];
+      }
+    }
+    return [];
+  }
+
+  try {
+    const { data, error } = await supabase!
+      .from('icd_codes')
+      .select('*')
+      .order('code', { ascending: true });
+
+    if (error) {
+      console.error('Error fetching ICD codes:', error);
+      return [];
+    }
+
+    return data || [];
+  } catch (error) {
+    console.error('Error fetching ICD codes:', error);
+    return [];
+  }
+}
+
+// Add a new ICD code
+export async function addICDCode(icdCode: ICDCodeRate): Promise<ICDCodeRate | null> {
+  if (!isSupabaseConfigured()) {
+    // Fallback to localStorage
+    try {
+      const stored = localStorage.getItem('hospitalICDCodes');
+      const codes = stored ? JSON.parse(stored) : [];
+      codes.push(icdCode);
+      localStorage.setItem('hospitalICDCodes', JSON.stringify(codes));
+      return icdCode;
+    } catch (error) {
+      console.error('Error adding ICD code to localStorage:', error);
+      return null;
+    }
+  }
+
+  try {
+    const { data, error } = await supabase!
+      .from('icd_codes')
+      .insert([icdCode])
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Error adding ICD code:', error);
+      return null;
+    }
+
+    return data;
+  } catch (error) {
+    console.error('Error adding ICD code:', error);
+    return null;
+  }
+}
+
+// Update an ICD code
+export async function updateICDCode(icdCode: ICDCodeRate): Promise<ICDCodeRate | null> {
+  if (!isSupabaseConfigured()) {
+    // Fallback to localStorage
+    try {
+      const stored = localStorage.getItem('hospitalICDCodes');
+      const codes = stored ? JSON.parse(stored) : [];
+      const updatedCodes = codes.map((c: ICDCodeRate) => 
+        c.code === icdCode.code ? icdCode : c
+      );
+      localStorage.setItem('hospitalICDCodes', JSON.stringify(updatedCodes));
+      return icdCode;
+    } catch (error) {
+      console.error('Error updating ICD code in localStorage:', error);
+      return null;
+    }
+  }
+
+  try {
+    const { data, error } = await supabase!
+      .from('icd_codes')
+      .update(icdCode)
+      .eq('code', icdCode.code)
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Error updating ICD code:', error);
+      return null;
+    }
+
+    return data;
+  } catch (error) {
+    console.error('Error updating ICD code:', error);
+    return null;
+  }
+}
+
+// Delete an ICD code
+export async function deleteICDCode(code: string): Promise<boolean> {
+  if (!isSupabaseConfigured()) {
+    // Fallback to localStorage
+    try {
+      const stored = localStorage.getItem('hospitalICDCodes');
+      const codes = stored ? JSON.parse(stored) : [];
+      const filteredCodes = codes.filter((c: ICDCodeRate) => c.code !== code);
+      localStorage.setItem('hospitalICDCodes', JSON.stringify(filteredCodes));
+      return true;
+    } catch (error) {
+      console.error('Error deleting ICD code from localStorage:', error);
+      return false;
+    }
+  }
+
+  try {
+    const { error } = await supabase!
+      .from('icd_codes')
+      .delete()
+      .eq('code', code);
+
+    if (error) {
+      console.error('Error deleting ICD code:', error);
+      return false;
+    }
+
+    return true;
+  } catch (error) {
+    console.error('Error deleting ICD code:', error);
+    return false;
+  }
+}
+
+// Delete all ICD codes
+export async function deleteAllICDCodes(): Promise<boolean> {
+  if (!isSupabaseConfigured()) {
+    try {
+      localStorage.setItem('hospitalICDCodes', JSON.stringify([]));
+      localStorage.removeItem('icdCodesSeeded');
+      return true;
+    } catch (error) {
+      console.error('Error clearing ICD codes from localStorage:', error);
+      return false;
+    }
+  }
+
+  try {
+    const { error } = await supabase!
+      .from('icd_codes')
+      .delete();
+
+    if (error) {
+      console.error('Error deleting all ICD codes:', error);
+      return false;
+    }
+
+    localStorage.removeItem('icdCodesSeeded');
+    return true;
+  } catch (error) {
+    console.error('Error deleting all ICD codes:', error);
+    return false;
+  }
+}
+
+// Get ICD code by code
+export async function getICDCodeByCode(code: string): Promise<ICDCodeRate | null> {
+  if (!isSupabaseConfigured()) {
+    // Fallback to localStorage
+    const stored = localStorage.getItem('hospitalICDCodes');
+    if (stored) {
+      try {
+        const codes = JSON.parse(stored);
+        return codes.find((c: ICDCodeRate) => c.code === code) || null;
+      } catch (e) {
+        console.error('Error parsing localStorage:', e);
+        return null;
+      }
+    }
+    return null;
+  }
+
+  try {
+    const { data, error } = await supabase!
+      .from('icd_codes')
+      .select('*')
+      .eq('code', code)
+      .single();
+
+    if (error) {
+      console.error('Error fetching ICD code:', error);
+      return null;
+    }
+
+    return data;
+  } catch (error) {
+    console.error('Error fetching ICD code:', error);
+    return null;
+  }
+}
+
+// RVS CODE MANAGEMENT FUNCTIONS
+// ========================================
+
+// Fetch all RVS codes
+export async function fetchRVSCodes(): Promise<RVSCodeRate[]> {
+  if (!isSupabaseConfigured()) {
+    // Fallback to localStorage
+    const stored = localStorage.getItem('hospitalRVSCodes');
+    if (stored) {
+      try {
+        return JSON.parse(stored);
+      } catch (e) {
+        console.error('Error parsing localStorage RVS codes:', e);
+        return [];
+      }
+    }
+    return [];
+  }
+
+  try {
+    const { data, error } = await supabase!
+      .from('rvs_codes')
+      .select('*')
+      .order('code', { ascending: true });
+
+    if (error) {
+      console.error('Error fetching RVS codes:', error);
+      return [];
+    }
+
+    return data || [];
+  } catch (error) {
+    console.error('Error fetching RVS codes:', error);
+    return [];
+  }
+}
+
+// Add a new RVS code
+export async function addRVSCode(rvsCode: RVSCodeRate): Promise<RVSCodeRate | null> {
+  if (!isSupabaseConfigured()) {
+    // Fallback to localStorage
+    try {
+      const stored = localStorage.getItem('hospitalRVSCodes');
+      const codes = stored ? JSON.parse(stored) : [];
+      codes.push(rvsCode);
+      localStorage.setItem('hospitalRVSCodes', JSON.stringify(codes));
+      return rvsCode;
+    } catch (error) {
+      console.error('Error adding RVS code to localStorage:', error);
+      return null;
+    }
+  }
+
+  try {
+    const { data, error } = await supabase!
+      .from('rvs_codes')
+      .insert([rvsCode])
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Error adding RVS code:', error);
+      return null;
+    }
+
+    return data;
+  } catch (error) {
+    console.error('Error adding RVS code:', error);
+    return null;
+  }
+}
+
+// Update an RVS code
+export async function updateRVSCode(rvsCode: RVSCodeRate): Promise<RVSCodeRate | null> {
+  if (!isSupabaseConfigured()) {
+    // Fallback to localStorage
+    try {
+      const stored = localStorage.getItem('hospitalRVSCodes');
+      const codes = stored ? JSON.parse(stored) : [];
+      const updatedCodes = codes.map((c: RVSCodeRate) => 
+        c.code === rvsCode.code ? rvsCode : c
+      );
+      localStorage.setItem('hospitalRVSCodes', JSON.stringify(updatedCodes));
+      return rvsCode;
+    } catch (error) {
+      console.error('Error updating RVS code in localStorage:', error);
+      return null;
+    }
+  }
+
+  try {
+    const { data, error } = await supabase!
+      .from('rvs_codes')
+      .update(rvsCode)
+      .eq('code', rvsCode.code)
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Error updating RVS code:', error);
+      return null;
+    }
+
+    return data;
+  } catch (error) {
+    console.error('Error updating RVS code:', error);
+    return null;
+  }
+}
+
+// Delete an RVS code
+export async function deleteRVSCode(code: string): Promise<boolean> {
+  if (!isSupabaseConfigured()) {
+    // Fallback to localStorage
+    try {
+      const stored = localStorage.getItem('hospitalRVSCodes');
+      const codes = stored ? JSON.parse(stored) : [];
+      const filteredCodes = codes.filter((c: RVSCodeRate) => c.code !== code);
+      localStorage.setItem('hospitalRVSCodes', JSON.stringify(filteredCodes));
+      return true;
+    } catch (error) {
+      console.error('Error deleting RVS code from localStorage:', error);
+      return false;
+    }
+  }
+
+  try {
+    const { error } = await supabase!
+      .from('rvs_codes')
+      .delete()
+      .eq('code', code);
+
+    if (error) {
+      console.error('Error deleting RVS code:', error);
+      return false;
+    }
+
+    return true;
+  } catch (error) {
+    console.error('Error deleting RVS code:', error);
+    return false;
+  }
+}
+
+// Delete all RVS codes
+export async function deleteAllRVSCodes(): Promise<boolean> {
+  if (!isSupabaseConfigured()) {
+    try {
+      localStorage.setItem('hospitalRVSCodes', JSON.stringify([]));
+      localStorage.removeItem('rvsCodesSeeded');
+      return true;
+    } catch (error) {
+      console.error('Error clearing RVS codes from localStorage:', error);
+      return false;
+    }
+  }
+
+  try {
+    const { error } = await supabase!
+      .from('rvs_codes')
+      .delete();
+
+    if (error) {
+      console.error('Error deleting all RVS codes:', error);
+      return false;
+    }
+
+    localStorage.removeItem('rvsCodesSeeded');
+    return true;
+  } catch (error) {
+    console.error('Error deleting all RVS codes:', error);
+    return false;
+  }
+}
+
+// Get RVS code by code
+export async function getRVSCodeByCode(code: string): Promise<RVSCodeRate | null> {
+  if (!isSupabaseConfigured()) {
+    // Fallback to localStorage
+    const stored = localStorage.getItem('hospitalRVSCodes');
+    if (stored) {
+      try {
+        const codes = JSON.parse(stored);
+        return codes.find((c: RVSCodeRate) => c.code === code) || null;
+      } catch (e) {
+        console.error('Error parsing localStorage:', e);
+        return null;
+      }
+    }
+    return null;
+  }
+
+  try {
+    const { data, error } = await supabase!
+      .from('rvs_codes')
+      .select('*')
+      .eq('code', code)
+      .single();
+
+    if (error) {
+      console.error('Error fetching RVS code:', error);
+      return null;
+    }
+
+    return data;
+  } catch (error) {
+    console.error('Error fetching RVS code:', error);
+    return null;
+  }
 }

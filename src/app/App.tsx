@@ -10,6 +10,10 @@ import Patients from './pages/Patients';
 import PatientDetail from './pages/PatientDetail';
 import AuditLogs from './pages/AuditLogs';
 import Settings from './pages/Settings';
+import ICDCodesPage from './pages/ICDCodesPage';
+import ZBenefitsPage from './pages/ZBenefitsPage';
+import KonsultaPackagesPage from './pages/KonsultaPackagesPage';
+import RVSCodesPage from './pages/RVSCodesPage';
 
 // Root component provides AuthProvider context to all routes
 function Root() {
@@ -61,6 +65,22 @@ const router = createBrowserRouter([
           {
             path: 'settings',
             element: <Settings />,
+          },
+          {
+            path: 'icd-codes',
+            element: <ICDCodesPage />,
+          },
+          {
+            path: 'z-benefits',
+            element: <ZBenefitsPage />,
+          },
+          {
+            path: 'konsulta-packages',
+            element: <KonsultaPackagesPage />,
+          },
+          {
+            path: 'rvs-codes',
+            element: <RVSCodesPage />,
           },
         ],
       },

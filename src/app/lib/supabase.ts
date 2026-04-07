@@ -9,7 +9,7 @@ export const getStorageMode = () => {
   try {
     if (typeof localStorage !== 'undefined') {
       const override = localStorage.getItem('appStorageMode');
-      if (['local', 'supabase', 'indexeddb'].includes(override)) {
+      if (['local', 'supabase', 'indexeddb', 'api'].includes(override)) {
         return override;
       }
     }
@@ -19,7 +19,7 @@ export const getStorageMode = () => {
 
   // Fall back to environment variable
   const envMode = (import.meta.env.VITE_APP_STORAGE || 'indexeddb').toLowerCase();
-  return ['local', 'supabase', 'indexeddb'].includes(envMode) ? envMode : 'indexeddb';
+  return ['local', 'supabase', 'indexeddb', 'api'].includes(envMode) ? envMode : 'indexeddb';
 };
 
 export const isLocalStorageMode = () => getStorageMode() === 'local';

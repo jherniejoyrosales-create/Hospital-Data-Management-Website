@@ -1,0 +1,237 @@
+#,Patient ID,Name,Confinement Period,PIN,ICD-10 Code,HF,PF,TOTAL,Date Filed,Date Refiled,Status,,Name,Relationship,Contact Number,Home Address
+,01-40-48,"Quilatan, Jaiden Beato",07/08/2025 - 07/09/2025,190901927387,R56.0,"9,555.00","4,095.00","13,650.00","September 5, 2025",,PAID,,,,,
+,01-40-29,"Soriano, Lester Cristobal",07/11/2025 - 07/13/2025,050259675550,E29.1 / 54520,"10,725.00","9,828.00","20,553.00","September 10, 2025",,PAID,,,,,
+,01-40-39,"Dulnuan, Kiersten Joy Maugao",07/28/2025 - 07/30/2025,010253621198,A01.0,"13,650.00","5,850.00","19,500.00","September 11, 2025",,PAID,,,,,
+,01-40-40,"Ortilano, Ronilo Lapenoso",07/28/2025 - 07/31/2025,010270459140,A01.1,"13,650.00","5,850.00","19,500.00","September 11, 2025",,PAID,,,,,
+,01-40-46,"Ladao, Didith Ocampo",08/03/2025 - 08/05/2025,012514911620,I10.1,"12,285.00","5,265.00","17,550.00","September 17, 2025",,PAID,,"Ladao, Raymund David",Spouse,0918 910 9477,"37 Dona Leoncia Ave. Dona Leoncia Subdivision, Talon 5, LPC"
+,01-40-68,"Emberga, Billy Lamingo",08/23/2025 - 08/26/2025,010261019030,S06.50,"12,012.00","5,148.00","17,160.00","September 18, 2025",,PAID,,,,,
+,01-40-62,"Guevarra, Robert Bautista",08/13/2025 - 08/15/2025,010510391646,M54.5,"8,736.00","3,744.00","12,480.00","September 18, 2025",,PAID,,"Guevarra, Robert Bautista",Member,0966 192 9320,"852 San Jose St. Daniel Fajardo, LPC"
+,01-40-50-A,"Flor, Rimadeth Alzate",08/06/2025 - 08/16/2025,010002395148,S06.00,"12,012.00","5,148.00","17,160.00","September 19, 2025",,PAID,,,,,
+,01-40-63,"Andrade, Amanda Maxene Ramos",08/13/2025 - 08/18/2025,010503881743,A97.1,"13,650.00","5,850.00","19,500.00","September 23, 2025",,PAID,,,,,
+,01-40-65,"Romero, Ralph Joie Moncayo",08/17/2025 - 08/22/2025,010270513269,I67.4,"30,303.00","12,987.00","43,290.00","September 22, 2025",,PAID,,,,,
+,01-40-64,"Cernal, Anabel Carpenteros",08/18/2025 - 08/26/2025,190260795310,C70.9,"23,068.50","9,886.50","32,955.00","September 22, 2025",,PAID,,,,0991 428 9700,
+,01-40-74,"Catubig, Jhunryl Balingasa",08/25/2025 - 08/28/2025,102027315574 / 020504924484,J18.92,"8,775.00","8,775.00","17,550.00","September 25, 2025",,PAID,,,,,
+,01-40-75,"Cañete, Diagani Deinla",08/26/2025 - 08/29/2025,010260540217,J18.92,"20,475.00","8,775.00","29,250.00","September 26, 2025",,PAID,,,,,
+,01-40-77,"Socillos, Janavin Jungco",08/28/2025 - 08/29/2025,010268074118,58120,"12,870.00","8,580.00","21,450.00","September 26, 2025",,PAID,,,,,
+,01-40-71,"Giron, Miguelito Fernando",08/24/2025 - 08/29/2025,082006754909,J18.92,"20,475.00","8,775.00","29,250.00","September 30, 2025",,PAID,,,0961 036 2113,,
+,01-40-76,"Genova, Zaire Mathis Manlucot",08/27/2025 - 09/01/2025,030501307234,"A09.9 , E86.2","5,460.00","2,340.00","7,800.00","September 30, 2025",,PAID,,,,,
+,01-40-79,"Salarza, Jose Armer Villanueva",08/30/2025 - 09/01/2025,011751276291,K56.6,"13,786.50","5,908.50","19,695.00","October 01, 2025",,PAID,,"Salarza, Annabelle",Daughter,0945 680 8267,"Blk 6 Callalily St. ramos Compound, Vergonville Subdivision, Pulang Lupa Dos, LPC"
+,01-39-93,"Federez, Thelma Junsay",09/01/2025 - 09/02/2025,190524462080,I15.9,"12,285.00","5,265.00","17,550.00","October 2, 2025",,PAID,,"Federez, George Chavez",Husband,0910 927 6013,"300 DBP Compound, Rosal St. Vergonville Subdivision, Pulang Lupa Dos, LPC"
+,01-40-86,"Victoria, Mary Grace Amper",09/01/2025 - 09/03/2025,190898948440,C53.9,"21,976.50","9,418.50","31,395.00","October 6, 2025",,PAID,,,,,
+,01-40-81,"Reyes, Giovanni Antonius Santos",08/31/2025 - 09/02/2025,190509519572,A01.0,"13,650.00","5,850.00","19,500.00","October 01, 2025",,PAID,,,,,
+,01-40-85,"Mendoza, Ricjay Layson",09/01/2025 - 09/04/2025,062019474599,J18.92,"20,475.00","8,775.00","29,250.00","October 6, 2025",,PAID,,"Layson, Ricalyn R.",Mother,0965 365 9583,"Blk 8 Lot 3 Gemini St. Villa Isabelita Subdivision, Pulang Lupa Dos, LPC"
+,01-38-94,"Lopera, Nathalie Kempis",08/24/2025 - 09/05/2025,022536565454,J18.92,"20,475.00","8,775.00","29,250.00","October 6, 2025",,PAID,,"Kempis, Patricia May Lopez",Mother,,
+,01-40-88,"Jaiswal, Rowena Rustia",09/07/2025 - 09/09/2025,190515751320,R57.0,"43,680.00","18,720.00","62,400.00","October 6, 2025",,PAID,,,,,
+,01-40-56,"Velasco, Marcelina Pioquid",08/09/2025 - 09/08/2025,011753376218,C76.0,"15,697.50","6,727.50","22,425.00","October 9, 2025",,PAID,,,,,
+,00-11-33,"Ayllon, Dylan Mcrae Alvarez",09/09/2025 - 09/12/2025,010505336416,"A09.9 , E86.2","8,190.00","3,510.00","11,700.00","October 14, 2025",,PAID,,"Ayllon, Rea Lyn Alvarez",Mother,0921 668 2285,"33-A Love St. Santos Homes II, Naga Road, Pulang Lupa Uno, LPC"
+,01-40-93,"Guinto, Gregorio Torreno",09/11/2025 - 09/15/2025,082500979719,E87.6,"11,602.50","4,972.50","16,575.00","October 14, 2025",,PAID,,"Canoy, Evelyn Abatayo",Daughter-in-law,0927 572 7403,41 B 6th St. Tabing Ilog Aniban II Bacoor Cavite
+,01-40-96,"Juaban, Aidan Callen",09/12/2025 - 09/15/2025,010265653567,J03.9,"5,460.00","2,340.00","7,800.00","October 9, 2025",,PAID,,"Dela Cruz, Camille Ramos",Mother,0999 564 5513,"054 Mustasa St. Evergreen Homes , Pulang Lupa, LPC"
+,01-40-97,"Abejo, Red Llagas",09/13/2025 - 09/17/2025,012710196646,R56.0,"9,555.00","4,095.00","13,650.00","October 17, 2025",,PAID,,"Llagas, Jomarie Velasco",Mother,09919 202 332,"1327 Miranda Compound, Zapote, Las Pinas City"
+,,"Villamin, Clark Steve Manankil",09/15/2025 - 09/17/2025,022004189314,J18.92,"20,475.00","8,775.00","29,250.00","October 16, 2025",,PAID,,"Manankil, Milkee Ayupan",Mother,0961 6066 775,"21 B Mayapis St. Pilar Village, LPC"
+,,"Okada, Katsuhiro Arceo",09/14/2025 - 09/19/2025,010261102078,A97.1,"13,650.00","5,850.00","19,500.00","October 23, 2025",,PAID,,"Arceo, Maridel Manuel",Mother,,
+,01-41-03,"Magallon, Karl Bryan Dalu",09/16/2025 - 09/19/2025,001053215857,46270,"10,530.00","13,104.00","23,634.00","October 21, 2025",,PAID,,"Magallon, Katrina Dalu",Sibling,0998 135 6676,"B9 L5 Camia St. TS Cruz, Almanza Dos LPC"
+,01-41-08,"Paraiso, Eliana Aiko Saguman",09/18/2028 - 09/22/2025,020271807733,A97.1,"13,650.00","5,850.00","19,500.00","October 22, 2025",,PAID,,"Saguman, Sheila May Molero; Carina Paspe",Mother; Grandmother,0976 387 4008; 0929 671 2376,"371 Real St. Pulang Lupa Uno, LPC"
+,01-41-07,"Diamante, Bella Zyrie Dollete",09/18/2025 - 09/20/2025,020502015754,A97.1,"13,650.00","5,850.00","19,500.00","October 22, 2025",,PAID,,"Diamante, Jenefer Dollete",Mother,0908 873 8604,"Mapayapa Village, LPC"
+,01-41-10,"Agres, Melanie Quilaquil",09/20/2025 - 09/24/2025,230027871165,J06.9,"5,460.00","2,340.00","7,800.00","October 22, 2025",,PAID,,"Dela Cruz, Vernalyn Agres",Daughter,0916 454 7391,"Blk 5 Lot 2 Marigold St. Talon IV, LPC"
+,,"Piojo, Mikhael Xavier Pasia",09/22/2025 - 09/24/2025,010518762740,R56.0,"9,555.00","4,095.00","13,650.00","October 23, 2025",,PAID,,,,,
+,,"Favis, Arturo Jr. Bugarin",09/19/2025 - 09/30/2025,030254200014,J18.92,"20,475.00","8,775.00","29,250.00","October 29, 2025",,PAID,,"Favis, Merriam",Wife,0920 505 4377,"137 Kenon Cam 7, Baguio City"
+,,"Jizmundo, Liam Arthur Jizmundo",10/06/2025 - 10/12/2025,012514320568,J18.92,"20,475.00","8,775.00","29,250.00","November 4, 2025",,PAID,,"Jizmundo, Kesia Blancaflor",Mother,0969 509 6634,"39 Calialily St. Vergon Ville Subd. Pulang Lupa Dos, Las Pinas City"
+,,"Mosende, Michael Rodriguez",10/08/2025 - 10/13/2025,230027448882,K29.1,"8,326.50","3,568.50","11,895.00","October 30, 2025",,PAID,,,,,
+,,"Bañares, Nica Duran",10/18/2025 - 10/22/2025,010270536463,N39.0,"10,237.50","4,387.50","14,625.00","November 10, 2025",,PAID,,Sarah Jane Duran,Sister,099105 06 783,South Daang Hari Taguig City
+,01-41-28,"Celoso, Arneh Mariah Diolas",09/28/2025 - 09/29/2025,010254632975,N39.0,"10,237.50","4,387.50","14,625.00","November 6, 2025",,PAID,,,,,
+,01-41-67,"Cortes, Timothy Francia",10/16/2025 - 10/18/2025,010261324240,A97.1,"13,650.00","5,850.00","19,500.00","November 11, 2025",,PAID,,"Francia, Richelle Banzuela",Mother,0906 055 5877,"Blk 3 Lot 38A Red St. Villa Fidella Subdivision, Elias Aldana, LPC"
+,01-41-17,"Lopez, Kayden Asher Isidro",09/24/2025 - 09/26/2025,130502100417,R56.0,"9,555.00","4,095.00","13,650.00","November 7, 2025",,PAID,,"Lopez, Ma Consuelo",Grandmother,0993 848 3247,"Phase I Blk 4 Lot 5 Lumina Homes, Brgy Bagtas, Tanza, Cavite / Isiah St. Manuyo Dos, Manukan Ext., LPC"
+,,"Mabini, Carlos Grajo",10/17/2025 - 10/22/2025,011751844419,J18.92,"20,475.00","8,775.00","29,250.00","November 5, 2025",,PAID,,"Mabini, Geralyn Obillo",Daughter,0948 3783 588,"404 Sikap Bisig CAA, Las Pinas"
+,,"Odchigue, Prince Zion",10/19/2025 - 10/25/2025,010263577138,R56.0,"9,555.00","4,095.00","13,650.00","November 7, 2025",,PAID,,"Blancaflor, Jocelyn R.",Mother,,"Gloria Diaz Classic 1 Dulo BFRV, Talon Dos LPC"
+,,"Sorita, Joselina Lydia Quetulio",09/21/2025 - 09/24/2025,010255979561,J18.92,"20,475.00","8,775.00","29,250.00","November 5, 2025",,PAID,,"Aguinaldo, Jonathan",Nephew,0953 477 2865,"Blk 4 Lot 6 Sweet Sultan St. Talon 4, LPC"
+,,"Valles, Johson Ron Yanela",10/20/2025 - 10/23/2025,010265649381,"A09.9, E86.1","8,190.00","3,510.00","11,700.00","November 7, 2025",,PAID,,"Valles, Amelia Yanela",Mother,0956 053 9157,"Blk 2 Lot 50 John Meryville Subdivision, Pulang Lupa Dos, LPC"
+,,"Abdul-Aziz, Fawziyah Sharief",09/28/2025 - 09/30/2025,202511995614,J18.92,"20,475.00","8,775.00","29,250.00","November 14, 2025",,PAID,,"Sharief, Lailanie Batua",Mother,0905 678 7510,BF Homes president Ave. Paranaque
+,,"Depilo, Elsie Villapaz",10/22/2025 - 10/27/2025,012001930905,J18.92,"20,475.00","8,775.00","29,250.00","November 11, 2025",,PAID,,,,0921 625 5716,"Kholiz Compound, Manuyo Uno, LPC"
+,,"Digman, Violeta Perez",10/25/2025 - 10/27/2025,190000904442,N39.0,"10,237.50","4,387.50","14,625.00","November 14, 2025",,PAID,,"Digman, Ma Roan Perez",Daughter,0999 169 6255,"Blk 13 Lot 28 Lemon St. CAA, LPC"
+,,"Espino, Eddie Torres Jr.",10/13/2025 - 10/15/2025,001026950127,N39.0,"10,237.50","4,387.50","14,625.00","November 13, 2025",,PAID,,"Ynbong, Marnie",Live in Partner,0981 487 0809,233 B Charles St. St. Joseph Subd. Pulang Lupa Dos LPC
+,01-40-25,"Fernandez, Alina Allison Ramirez",07/03/2025 - 07/06/2025,010256373993,J06.9,"5,460.00","2,340.00","7,800.00","September 1, 2025",,PAID,,,,,
+,,"Moral, Niño Gremari Moral",10/27/2025 - 10/30/2025,172507774011,A01.0,"13,650.00","5,850.00","19,500.00","November 14, 2025",,PAID,,,,,
+,01-40-61,"Racadag, Richard Joviner",08/09/2025 - 08/14/2025,080508452814,I64,"53,200.00","22,800.00","76,000.00","September 24, 2025",,PAID,,,,,
+,01-40-99,"Yambao, Jennilyn Tolentino",09/13/2025 - 10/31/2025,001026655852,I50.0,"21,430.50","9,184.50","30,615.00","November 13, 2025",,PAID,,"Yambao, Jenniqueen Tolentino",Sibling,0929 690 6233,"165 E. Trinidad , Pamplona Uno, LPC"
+,,"Boganotan, Alma Calapis",10/05/2025 - 10/07/2025,012000438829,K57.3,"12,967.50","5,557.50","18,525.00","November 20, 2025",,PAID,,"Sanz, Rea",Daughter,0961 517 1078,Bf Martinville Manuyo Dos Las Pinas City
+,,"Carballo, Jarelle Parco",10/03/2025 - 10/07/2025,100252287587,N47,"12,285.00","5,265.00","17,550.00","November 20, 2025",,PAID,,"Parco, Leslie Jayona",Mother,0992 7248 932,"Bagumbayan Sur, Naga, Camarines Sur"
+,,"De Lara, Leonardo Cillano",10/25/2025 - 11/02/2025,011752003019,J18.92,"20,475.00","8,775.00","29,250.00","November 24, 2025",,PAID,,"Pdua, Rosalinda de Lara",Daughter,0955 163 9647,
+,,"Duque, Prince Anson Racadag",10/08/2025 - 10/10/2025,010513428133,R56.0,"9,555.00","4,095.00","13,650.00","November 19, 2025",,PAID,,"Duque, Efson Mino",Father,0909 618 1260,712 Lansones St. Phase1 B CAA Las Pinas City
+,01-40-15,"Dural, Nomer Frias",06/03/2025 - 06/15/2025,012501453992,I61.1,"56,000.00","24,000.00","80,000.00","August 27, 2025",,PAID,,"Magtangob, Rose Ann",Daughter,0907 865 6241,"968 Tramo St. Ilaya, LPC"
+,,"Lacsamana, Aiah Janelle Bunagan",10/05/2025 - 10/07/2025,030255066192,J18.92,"20,475.00","8,775.00","29,250.00","November 19, 2025",,PAID,,,,0960 367 4335,"116 Saging St. Phase 2 CAA, Las Pinas."
+,,"Alao, Edna Garcia",10/17/2025 - 10/20/2025,022006362587,NSD01,"3,900.00","2,600.00","6,500.00","November 28, 2025",,PAID,,Lhorelie Grace Dredes,Sister in Law,0915 491 1851,162 Talaba 3 Zone 6 Bacoor Cavite
+,,"Bayo, Jake Luis Audrey Parac",10/02/2025 - 10/06/2025,010268698103,J20.9,"5,460.00","2,340.00","7,800.00","November 27, 2025",,PAID,,"Cutad, Jhodie Ann Formacion",Girlfriend,0968 435 4384,"7 St. Edward St. Pulang Lupa Dos, LPC"
+,,"Francisco, Rica Manacho",10/06/2025 - 10/09/2025,010251114965,J03.9,"5,460.00","2,340.00","7,800.00","November 27, 2025",,PAID,,"Francisco, Rica Z.",Father,0916 588 3011,5165A Saint Andrew St. Saint Joseph Subd. Pulang Lupa Dos.
+,,"Jarin, Andrevie Bantugan",10/06/2025 - 10/10/2025,190268129298,N13.2,"13,240.50","5,674.50","18,915.00","November 26, 2025",,PAID,,,,,
+,,"Mendoza, Marcus Kalil Cabugnason",10/03/2025 - 10/06/2025,012025744832,A97.1,"13,650.00","5,850.00","19,500.00","November 27, 2025",,PAID,,"Cabugnason, Christine Joy Maneja",Mother,0965 6448 693,"038 Niger St. Manuyo Dos, Las Pinas City"
+,,"Verdadero, Ian Ralph Lampitoc",11/03/2025 - 11/06/2025,062507466317,A97.1,"13,650.00","5,850.00","19,500.00","November 26, 2025",,PAID,,,,,
+,01-41-34,"Abalorio, Zacarias III Manadong",10/02/2025 - 10/04/2025,130252341812,R56.06,"9,555.00","4,095.00","13,650.00","December 3, 2025",,PAID,,"Manadong, Czarina Jean Ogardo",Mother,0963 115 1225,"23 Santos Drive, Santos Village, Zapote, LPC"
+,,"Cuevas, Roman Pestano",10/26/2025 - 10/27/2025,010254568215,C34.9,"19,929.00","8,541.00","28,470.00","December 1, 2025",,PAID,,,,,
+,,"Diaz, Cecilia Narra",11/09/2025 - 11/11/2025,011753276876,I50.0,"21,430.50","9,184.50","30,615.00","December 1, 2025",,PAID,,,,,
+,01-40-91,"Fonclara, Elena Montaña",09/09/2025 - 09/10/2025,010252628598,OPER1 (K70.3),"30,442.00",707,"31,149.00","October 13, 2025",,PAID,,"Balmores, Aurora",Sister,0927 964 4775,"L3 B3 Skylark St. Goodyear Park, Almanza Uno, LPC"
+,01-41-38,"Fuentes, Zachary Gavin Razon",10/03/2025 - 10/06/2025,010513396789,G40.9,"10,647.00","4,563.00","15,210.00","December 1, 2025",,PAID,,"Fuentes, Jenna Lynne Razon",Mother,0912 287 8843,"17 Hope St. Santos Homes 2, Piulang Lupa I, LPC"
+,,"Perez de Tagle, Scarlet Verdadero",11/10/2025 - 11/14/2025,010265729482,J18.92,"20,475.00","8,775.00","29,250.00","December 4, 2025",,PAID,,,,,
+,,"Armillo, Ailyn Maraño",12/03/2025 - 12/05/2025,040500965020,32020,"15,561.00","5,187.00","10,374.00","December 16, 2025",,PAID,,,,,
+,01-41-62,"Bulo, Maria Exequela Superalis",10/10/2025 - 10/15/2025,190901895647,"A06.8, 44950","8,190.00","3,510.00","11,700.00","December 4, 2025",,PAID,,,,0962 748 6183,
+,,"De Leon, Allan Caralipio",11/22/2025 - 11/24/2025,030512835194,S00.2,"2,340.00","5,460.00","7,800.00","December 16, 2025",,PAID,,,,,
+,01-41-78,"Defeo, Michelane Matanos",10/21/2025 - 10/22/2025,080500501824,I10.1,"12,285.00","5,265.00","17,550.00","November 7, 2025",,PAID,,"Defeo, Ashira Kristine M.",Daughter,0985 055 6687,"1095 Atis St. Bf Int'l CAA, Las Pinas City"
+,,"Esquilona, Bernardo Solis Jr",11/15/2025 - 11/18/2025,010259679465,A97.1,"13,650.00","5,850.00","19,500.00","December 5, 2025",,PAID,,,,,
+,,"Macasaet, Francesco Angelo Arellano",11/05/2025 - 11/10/2025,190252989440,M30.3,"18,837.00","8,073.00","26,910.00","December 11, 2025",,PAID,,,,,
+,,"Manaligod, Maridel Elvira",11/03/2025 - 11/12/2025,220000983985,"47562, K80.0","36,270.00","24,180.00","60,450.00","December 16, 2025",,PAID,,"Manaligod, Miguelito Pedrasa",Spouse,0977 672 0057,"2D Airmens Village, Pulang Lupa Dos, LPC"
+,,"Pioquid, Myrna Rogador",11/28/2025 - 12/05/2025,010253272517,J18.92,"20,475.00","8,775.00","29,250.00","December 10, 2025",,PAID,,,,,
+,,"Siriban, Lance Andrew Advincula",11/21/2025 - 11/24/2025,010512813718,A97.1,"13,650.00","5,850.00","19,500.00","December 5, 2025",,PAID,,,,,
+,,"Andres, Ronie Dimaano",12/01/2025 - 12/04/2025,010259583077,L03.9,"13,104.00","5,616.00","18,720.00","December 17, 2025",,PAID,,,,,
+,,"Belaong, Zenaya Louise Merhem",09/27/2025 - 09/30/2025,010258222348,J18.92,"20,475.00","8,775.00","29,250.00","October 27, 2025",,PAID,,"Merhan, Marjorie Magtangob",Mother,0931 943 7010,274 12th St. Purok Kwatro Selverio Compound Pque
+,,"Hernandez, Gloria Comillo",12/09/2025 - 12/11/2025,012500968557,I10.1,"12,285.00","5,265.00","17,550.00","December 18, 2025",,PAID,,,,,
+,,"Montejo, Joshrick Andrei Gamasan",11/12/2025 - 11/14/2025,080508297509,J18.92,"20,475.00","8,775.00","29,250.00","December 17, 2025",,PAID,,"Gamasan, Mary Ann Lyka Gaston",,,
+,,"Redil, Ma. Kristina Paula Guinto",11/23/2025 - 11/29/2025,010510195685,59513,"22,230.00","14,820.00","37,050.00","December 18, 2025",,PAID,,,,,
+,,"Rodriguez, Mars Temonio",10/04/2025 - 10/15/2025,190892693882,J18.92,"20,475.00","8,775.00","29,250.00","October 30, 2025",,PAID,,"Rodriguez, Joash Presto",Son,0905 634 4741,Z1 F. Castillo St. Proj. 4 Quezon City
+,,"Segonla, Nimfa Julio",10/24/2025 - 10/27/2025,110254478377,J18.92,"20,475.00","8,775.00","29,250.00","November 11, 2025",,PAID,,,,,
+,,"Dela Cruz, Merryan Sarmiento",11/26/2025 - 11/28/2025,020258940718,A97.1,"13,650.00","5,850.00","19,500.00","December 11, 2025",,PAID,,,,,
+,,"Flores, Angelita Fajutrao",12/02/2025 - 12/06/2025,021750265054,K27.0,"17,472.00","7,488.00","24,960.00","January 06, 2026",,PAID,,,,,
+,,"Gonzales, Lilibeth Rotor",12/13/2025 - 12/14/2025,192005257944,S06.00,"12,012.00","5,148.00","17,160.00","January 7, 2026",,PAID,,,,,
+,,"Montances, Anacleto Agravante",10/17/2025 - 10/31/2025,190893304294,I61.8,"56,000.00","24,000.00","80,000.00","December 9, 2025",,PAID,,,,,
+,01-40-72,"Villanueva, Michael Panganiban",08/24/2025 - 08/29/2025,010270499029,I63.8,"53,200.00","22,800.00","76,000.00","September 25, 2025",,PAID,,,,,
+,01-42-28,"Abordo, Fe Bentulan",12/11/2025 - 12/12/2025,011752274608,Q44.6,"15,424.50","6,610.50","22,035.00","January 13,2026",,PAID,,,,,
+,01-42-36,"Fernandez, Jovito Aguilan",12/13/2025 - 12/16/2025,010262332441,I10.1,"12,285.00","5,265.00","17,550.00","January 14,2026",,PAID,,"Fernandez, Jovito Aguilar",Member,0908 676 1383,"32 Almond St. Phase 4 BF Martinville, Manuyo Dos, LPC"
+,,"Geli, Aurora Apas",11/05/2025 - 11/25/2025,011751226723,I61.0,"56,000.00","24,000.00","80,000.00","December 12, 2025",,PAID,,,,,
+,01-40-67,"Lee, Vivencia Hisman",08/21/2025 - 08/27/2025,010501616899,I63.8,"53,200.00","22,800.00","76,000.00","September 24, 2025",,PAID,,"Diones, Ruby Jane",Daughter,0976 081 7989,"0696 Aratilis St. CAA, LPC"
+,,"Rance, Ludivina Fe De Jesus",12/10/2025 - 12/12/2025,031751226031,K74.0,"20,611.50","8,833.50","29,445.00","January 12,2026",,PAID,,,,,
+,01-42-41,"Sison, Jessica Yadao",12/15/2025 - 12/16/2025,010521508723,"A09.9, E86.1","5,460.00","2,340.00","7,800.00","January 14,2026",,PAID,,"Arañas, Erwin",-,0956 751 3693,"Unit 204 Rafsan Bldg Galang Road, Pulang Lupa Uno, LPC"
+,,"Abia, Hanz Dean Langcoy",10/02/2025 - 10/06/2025,010255800888,J18.92,"20,475.00","8,775.00","29,250.00","November 3, 2025",,PAID,,"Langcoy, Razel Hanna May Zamora",Mother,,
+,01-42-51,"Basher, Alisare Rajazaman",12/23/2025 - 12/24/2025,020278643086,I10.1,"12,285.00","5,265.00","17,550.00","January 23, 2026",,PAID,,"Basher, Alisare Rajazaman",Member,0915 986 0289,"8 Yakal St. Maywood Village, BF Homes, Parañaque City"
+,01-42-48,"Berbasa, Abegeil Talinge",12/22/2025 - 12/24/2025,132513394636,A97.1,"13,650.00","5,850.00","19,500.00","January 23, 2026",,PAID,,"Berbasa, Abegeil Talinge",Member,0992 749 7562,"St. Matthew, St. Joseph Subdivision, Pulang Lupa Dos, LPC"
+,01-42-39,"Borrinaga, Elena Eito",12/16/2025 - 12/19/2025,021752626445,L03.9,"13,104.00","5,616.00","18,720.00","January 23, 2026",,PAID,,"Borrinaga, Elena Eito",Member,0922 793 5829,"B1 L4 Maras St. Mapayapa Village, Pulang Lupa Uno, LPC"
+,01-42-57,"Dejeron, Marilyn Sescar",12/25/2025 - 12/26/2025,012501280362,J18.92,"20,475.00","8,775.00","29,250.00","January 28, 2026",,PAID,,"Dejeron, Marilyn Sescar",Member,0963 031 4085,"2396-A Bicol St. CAA, LPC"
+,01-37-95,"Flores, Kimberly Lazarte",12/22/2025 - 12/23/2025,012501954452,E87.8,"11,602.50","4,972.50","16,575.00","January 23, 2026",,PAID,,"Flores, Kimberly Lazarte",Member,0975 906 1510,"178 Cashmere Vergonville Subdivision, Pulang Lupa Dos, LPC"
+,,"Gabion, Jennefer Mabato",11/23/2025 - 11/28/2025,020265052437,G93.4,"21,567.00","9,243.00","30,810.00","December 8, 2025",,PAID,,,,,
+,01-42-55,"Gumapas, Racquel Milan",12/24/2025 - 12/25/2025,010508867196,"A09.9, E86.1","5,460.00","2,340.00","7,800.00","January 28, 2026",,PAID,,"Gumapas, Racquel Milan",Member,0954 226 6300,"Blk 6 Lot 31 Topsville Subdivision, Pulang Lupa Dos, LPC"
+,01-42-43,"Macaraeg, Marissa Cadayday",12/17/2025 - 12/21/2025,212009704709,J94.8,"18,427.50","7,897.50","26,325.00","January 23, 2026",,PAID,,"Macaraeg, Marissa Cadayday",Member,0993 948 5030,"Blk 5 Lot 56 San Jose, GMA, Cavite"
+,01-42-35,"Marcelino, Thelma Pangilinan",12/13/2025 - 12/18/2025,230027868024,J18.92,"20,475.00","8,775.00","29,250.00","January 21, 2026",,PAID,,"Faelangco, Monica",Granddaughter,,"13 Gold St. Phase 5 BF Martinville, Manuyo Dos, LPC"
+,,"Naron, Cesar Mesias",09/30/2025 - 10/20/2025,012001958982,I69.3,"14,059.50","6,025.50","20,085.00","December 8, 2025",,PAID,,,,,
+,,"Ramirez, Steven Mart Mirasol",11/25/2025 - 11/27/2025,020501733653,A97.1,"13,650.00","5,850.00","19,500.00","December 8, 2025",,PAID,,,,,
+,01-42-44,"Ramos, Ariana Sofia Gohil",12/19/2025 - 12/22/2025,020263282591,J18.92,"20,475.00","8,775.00","29,250.00","January 23, 2026",,PAID,,"Ramos, Rholenn Estacion",Father,0929 434 1435,"2026 Singalong St. Malate, Manila"
+,01-42-42,"Tadatada, Paul Xander Cervantes",12/15/2025 - 12/22/2025,190260146401,A97.1,"13,650.00","5,850.00","19,500.00","January 23, 2026",,PAID,,"Cervantes, Annalyn Unico",Mother,0985 075 9235,"1802 Quintas St. CAA, LPC"
+,01-40-49,"Borres, Joaquin Macabodbod",,190505741807,I60.9,"56,000.00","24,000.00","80,000.00","September 8, 2025",,In-process,,"Borres, Jhun",Son,,
+,01-40-45,"Egenias, Jayson Estolonio",,010501616899,N39.0,"10,237.50","4,387.50","14,625.00","September 17, 2025",,In-process,,,,,
+,01-40-60,"Dioquino, Rodel Valles",,190887145818,K52.9,"8,190.00","3,510.00","11,700.00","September 18, 2025",,In-process,,,,,
+,01-40-78,"Chaingan, May Sushmita Sen",,210500869989,J46,"15,741.60","6,746.40","22,488.00","September 30, 2025",,In-process,,"Barrosa, Christine",LIP,0910 455 2998 / 0995 006 1393,"557 Jade St. Ext. Balikatan, BF International, LPC"
+,01-40-89,"Alcartado, Railley Jason Hermida",,030510383520,A97.1,"13,650.00","5,850.00","19,500.00","September 12, 2025",,In-process,,"Alcartado, Alma Hermida",Mother,,
+,01-40-92,"Umerez, Rolando Aguirre",,010509798600,44960,"18,720.00","12,480.00","31,200.00","October 20, 2025",,In-process,,"Umerez, Jennifer Umbre",Wife,0938 899 1742,"Blk 16 Lot 8-10 Judge St. BF Martinville, MAnuyo 2, LPC"
+,,"Gersaniva, Ma Cristina Gozum",,001267204243,I61.0,"56,000.00","24,000.00","80,000.00","October 23, 2025",,In-process,,"Gersaniva, Chrisnalyn Joyce Gozum",Child,0985 361 1813,"246 Tabon III Alias Aldana, LPC"
+,,"Quilatan, June Julio",,011753398599,G45.9,"9,964.50","4,270.50","14,235.00","October 13, 2025",,In-process,,"Quilatan, Charmaine Genova",Daughter,,"#1 Julios Compound, Naga Road, Pulang Lupa Uno, LPC"
+,01-41-05,"Lumacad, Jessel Bonto",,080508159335,Q21.0,"15,834.00","6,786.00","22,620.00","October 20, 2025",,In-process,,"Lumacad, Lorenzo Jr. Laurete",Father,0910 294 5252,
+,,"Regaña, Regidor Villafañe",,190510146038,C79.5,"22,522.50","9,652.50","32,175.00","October 24, 2025",,In-process,,"Regaña, Celsa Sorita",Spouse,0917 843 0169,"Blk 5 Lot 1 Delta St. Orientville, Molino 1, Bacoor, Cavite"
+,01-41-04,"Canggas, Jose Jerry Regalado",,010522373155,I61.3,"56,000.00","24,000.00","80,000.00","October 21, 2025",,In-process,,"Ibao, Mary Grace Ortega",Niece,0938 4341 358,Munich St. Maligaya Compound BF International Village LPC
+,,"Collado, Neth Nilzen Sanducal",,010514424948,O00.0; 58120,"12,870.00","8,580.00","21,450.00","October 24, 2025",,In-process,,"Borja, Edward",Live in,0961 740 1108,1194 Calamansi St. CAA LPC
+,,"Mabolo, Soledad Ledesma Riel",,022004093848,I63.9,"53,200.00","22,800.00","76,000.00","November 3, 2025",,In-process,,"Angob, Fulbert Ladaga",Son-in-law,0915 110 4640,"Blk 47 Lot 31 Brgy Hugo Perez, Trece Martirez, Cavite"
+,01-41-31,"Ocampo, Joreen Enocia",,022517803131,I97.1,"13,650.00","5,850.00","19,500.00","October 24, 2025",,In-process,,,,,
+,,"Paytaren, Naomi Alzate",,010255010927,58120,"12,870.00","8,580.00","21,450.00","October 24, 2025",,In-process,,,,,
+,,"Niemes, Vicenta Navarroza",,081754532858,I10.1,"12,285.00","5,265.00","17,550.00","October 24, 2025",,In-process,,,,,
+,,"Beltran, Helen De La Torre",,190254131117,58120,"12,870.00","8,580.00","21,450.00","October 27, 2025",,In-process,,,,,
+,,"Miniano, Ezefherian Arielle Emmanuel",,190897516075,R56.0,"9,555.00","4,095.00","13,650.00","November 13, 2025",,In-process,,,,,
+,,"Gonzales, Hesikiah DelMonte",,020252684795,A16.1,"13,377.00","5,733.00","19,110.00","November 19, 2025",,In-process,,,,,
+,01-41-35,"Obuyes, Evelyn Bayog",,111751879950,I63.5,"53,200.00","22,800.00","76,000.00","December 4, 2025",,In-process,,,,,
+,,"Jomaya, Leonardo Garcia",,230027269805,S39.0,"9,828.00","4,212.00","14,040.00","November 21, 2025",,In-process,,"Jomaya, Geraldine Murao",Spouse,0961 099 2148,"Blk 6 #38 Callalily St. Vergonville Subdivsiion, Pulang Lupa Dos, LPC"
+,,"Luna, Ernesto Hammond",,011751401398,I63.8,"53,200.00","22,800.00","76,000.00","December 8, 2025",,In-process,,"Luna, Fraulein Fabrero",Daughter-in-law,0926 323 4831,"20 Caimito St. Verdant Acres Subdivision, Pamplona 3, LPC"
+,01-41-56,"Orongan, Flocerpida Gersava",,010253389716,I61.0,"56,000.00","24,000.00","80,000.00","December 4, 2025",,In-process,,"Orongan, Gina Gersava",Daughter,0946 313 0533,"248 Pag-asa Compound, Pilar Village, LPC"
+,,"Talaro, Miraya Rue Ramos",,020267465534,G40.1,"10,647.00","4,563.00","15,210.00","November 20, 2025",,In-process,,"Ramos, Mary Rose Labrador; Talaro, Ryan Mocorro",Mother; Father,0991 477 6280; 0992 424 3151,"1543 Maple St. Teachers Compound, BF International/CAA, Las Pinas City"
+,,"Noces, Jaeger Seth Barcelona",,010505641561,A97.1,"13,650.00","5,850.00","19,500.00","November 27, 2025",,In-process,,,,,
+,,"Espinola, Xion Kyle Tecson",,010260880735,"A09.9, E86.2","5,460.00","2,340.00","7,800.00","November 10, 2025",,In-process,,,,,
+,,"Dimco, Madeline Aliño",,012002446047,I10.1,"12,285.00","5,265.00","17,550.00","November 14, 2025",,In-process,,,,,
+,,"Hetutua, Charlie Roa",,060251755798,A97.1,"13,650.00","5,850.00","19,500.00","November 26, 2025",,In-process,,,,,
+,,"Navarra, Alfredo Sr. Nalangan",,011753422996,I63.3,"53,200.00","22,800.00","76,000.00","December 3, 2025",,In-process,,,,,
+,,"Españo, Luvizminda Lindo",,020251049336,I60.9,"56,000.00","24,000.00","80,000.00","December 10, 2025",,In-process,,,,,
+,,"Marron, Federico Valdez",,230020613705,J18.92,"20,475.00","8,775.00","29,250.00","January 06, 2026",,In-process,,,,,
+,,"Garcia, Jensen Cabantog",12/12/2025,010506993925,J45.90,"15,741.60","6,746.40","22,488.00","January 7, 2026",,In-process,,,,,
+,,"Barcelona, Rizaida San Juan",12/15/2025,010261020284,I69.3,"14,059.50","6,025.50","20,085.00","January 9,2026",,In-process,,,,,
+,,"Soledad, Rico Carmelotes",12/16/2025,190000686852,I63.4,"53,200.00","22,800.00","76,000.00","January 9,2026",,In-process,,"Soledad, Rico Carmelotes",Member,0960 904 7959,"Blk 30 Lot 6 Bernabe Compound, Pulang Lupa Uno, LPC"
+,01-42-22,"Mende, Eldei Hibaya",12/15/2025 - 12/17/2025,190896095017,I24.8,"16,380.00","7,020.00","23,400.00","January 21, 2026",,In-process,,"Silva, Armine Pearl",,0929 879 6179,"B5 Lot 12 Maria Socorro St. SAV 7, Pulang Lupa Dos, LPC"
+,01-42-23,"Macas, Janella Alexa Cañete",12/6/2025 - 12/07/2025,010270697807,NSD01,"5,850.00","3,900.00","9,750.00","January 30, 2026",,In-process,,"Macas, Janella Alexa Cañete",Member,0963 375 9214,"Ruth St. Phase 5, Manuyo Dos, LPC"
+,01-42-40,"Baranda, Ronn Carlos Bersabe",12/16/2025 - 12/18/2025,010258616524,J45.90,"15,741.60","6,746.40","22,488.00","January 22, 2026",,In-process,,"Baranda, Ronn Carlos Bersabe",Member,0995 563 1747,"B33 L9 Bernabe Compound, Pulang Lupa Uno, LPC"
+,01-42-64,"Zapanta, Louisito Cainglet",12/28/2025 - 12/29/2025,010509877888,J18.92,"20,475.00","8,775.00","29,250.00","January 30, 2026",,In-process,,"Zapanta, Louisito Cainglet",Member,0910 148 3256,"23 Scotland St. Brgy. San Isidro, Parañaque City"
+,01-42-60,"Masanga, Kheneby Magbiray",12/27/2025 - 12/29/2025,030509371187,J45.90,"15,741.60","6,746.40","22,488.00","February 3, 2026",,In-process,,"Masanga, Kheneby Magbiray",Member,0939 175 5042,"14B Labanos St. Evergreen Homes, LPC"
+,01-42-59,"Marin, Gernel Earl Ruga",12/27/2025 - 12/29/2025,230021638469,J18.92,"20,475.00","8,775.00","29,250.00","February 04, 2026",,In-process,,"Marin, Arnel Ramiro",Father,0955 114 3856,"1268 Quirino Ave San Dionisio, Parañaque City"
+,01-42-37,"Mendoza, Vince Andrew Velante",12/14/2025 - 12/17/2025,102009227854,J18.92,"20,475.00","8,775.00","29,250.00","February 04, 2026",,In-process,,"Mendoza, Analyn Velante",Mother,0992 591 1619,"Atlas Compound, Naga Road, Pulang Lupa Uno, LPC"
+,01-42-86,"Grieta, Marven Decen",01/07/2026 - 01/08/2026,020501457311,"A09.9, E86.1","8,190.00","3,510.00","11,700.00","February 04, 2026",,In-process,,"Grieta, Marven Decen",Member,0912 783 4335,"2C Yakal BF Int'l CAA, LPC"
+,01-42-82,"Resurreccion, Corazon Mercado",,021752337184,J18.92,"20,475.00","8,775.00","29,250.00","February 06, 2026",,In-process,,"Ranin, Nimfa",Daughter,0917 106 0748,"423 Taurus St. Phase 8, Gatchalian Subdivision, Brgy, Manuyo Dos, LPC"
+,01-42-85,"Quillao, Mary Antoinette Fami",,012509271524,"A09.9 , E86.1","8,190.00","3,510.00","11,700.00","February 06, 2026",,In-process,,"Quillao, Mary Antoinette Fami",Member,0942 664 2668,"Blk 2 Lot 3 I Santos Gatchalian Subdivision, Manuyo Dos, LPC"
+,01-42-79,"Sumayod, Erlle Vincent Biong",,080510748313,J18.92,"20,475.00","8,775.00","29,250.00","February 06, 2026",,In-process,,"Sumayod, Alvidic Ortiz",Father,0995 454 88520,"Ruth St. Phase 4, BF Manuyo Dos, LPC"
+,01-42-76,"Somblingo, Gabriel Bagaporo",,010264829068,A97.1,"13,650.00","5,850.00","19,500.00","February 08, 2026",,In-process,,"Somblingo, Jane Bagaporo",Sister,0945 882 1152,"199 Cleanville, Manyo Uno, LPC"
+,01-42-37-A,"Baguio, Elmer Cazon",,010264206532,G41.0,"21,294.00","9,126.00","30,420.00","February 08, 2026",,In-process,,"Baguio, Malony Dugan",Nephew,0968 725 8513,"Josefa Ave. #30 Doña Josefa Village, LPC"
+,01-42-77,"Santos, Maria Mhelna Bagadiong",,010263041343,L02.3; 46060,"10,725.00","8,190.00","18,915.00","February 08, 2026",,In-process,,"Santos, Maria Mhelna Bagadiong",Member,0992 780 2842,"Blk 2 Lot 6 ASter Dulo St. TS Cruz Subd. , LPC"
+,01-42-90,"Villanueva, Lutchelyn Samanion",01/08/2026- 01/09/2026,010517794908,NSD01,"5,850.00","3,900.00","9,750.00","February 5, 2026",,In-process,,"Villanueva, Lutcelyn Samanion",Member,0991 880 3789,"8 Green Revolution St. CAA, LPC"
+,01-42-62,"Semilla Jr., Joselito Lasmarias",12/27/2025 - 12/30/2025,012501905982,J03.9,"5,460.00","2,340.00","7,800.00","February 5, 2026",,In-process,,"Semilla Jr., Joselito Lasmarias",Member,0991 188 7507,"1126 BF Martinville Ph5, Manuyo Dos, LPC"
+,01-42-68,"Mojica, Joshua Calyx Chavez",12/29/2025 - 12/30/2025,010522486839,K27.3,"8,326.50","3,568.50","11,895.00","February 5, 2026",,In-process,,,,,
+,01-42-88,"Orio, Elizabeth Buenafe",01/07/2026 - 01/09/2026,010262504013,J18.92,"20,475.00","8,775.00","29,250.00","February 6, 2026",,In-process,,"Orio, Elizabeth Buenafe",Member,0946 011 3090,"2956 San Antonio Homes, CAA, LPC"
+,01-42-92,"Castro, Jerecho Total",01/08/2026 - 01/10/2026,012002658044,"A09.9, E86.1","8,190.00","3,510.00","11,700.00","February 11, 2026",,In-process,,"Castro, Jerecho Total",Member,0930 567 4412,"Dulos Compound, Tabon 2, Elias Aldana, LPC"
+,01-42-89,"Binaday, Lorenzo Beran",01/08/2026 - 01/10/2026,010250167569,K29.1,"8,326.50","3,568.50","11,895.00","February 11, 2026",,In-process,,"Binaday, Lorenzo Beran",Member,0951 018 4375,"1765 Rizal St. CAA, LPC"
+,01-42-75,"Viray, Elena Reyes",01/07/2026 - 01/10/2026,070254392497,J45.90,"15,741.60","6,746.40","22,488.00","February 12, 2026",,In-process,,"Viray, Elena Reyes",Member,0995 073 6669,"84 President Ave. Teoville 3, BF Homes, Parañaque City"
+,01-42-78,"Cacho, Nathalie Blythe Serafin",01/05/2026- 01/09/2026,010257757515,A97.1,"13,650.00","5,850.00","19,500.00","February 13, 2026",,In-process,,"Cacho, John Mark Galangie",Father,0966 180 0299; 0950 644 2043,"54 Lino St. CAA, LPC"
+,01-42-80,"Mabini, Felicidad Obillo",01/05/2026 - 01/11/2026,051754052310,A15.0,"13,377.00","5,733.00","19,110.00","February 13, 2026",,In-process,,"Mabini, Felicidad Obillo",Member,0948 378 3588,"404 Sikab Bisig St. CAA, LPC"
+,01-42-83,"Gicole, Jun Mark Balana",01/07/2026 - 01/12/2026,010513965511,I61.1,"56,000.00","24,000.00","80,000.00","February 13, 2026",,In-process,,"Gicole, Jun Mark Balana",Member,0906 182 3455,"Blk 1 Lot 14A Carnation St. TS Cruz Subdivision, Almanza Dos, LPC"
+,01-42-87,"Palomo, Rio Kaiden Roa",01/11/2026 - 01/13/2026,032250130839,"A09.9, E86.1","8,190.00","3,510.00","11,700.00","February 13, 2026",,In-process,,"Palomo, Reinalyn",Mother,0966 923 4626,"B11 L1 Everlasting Home, Talon 4, LPC"
+,01-42-32,"Ariola, Rogen Babiano",12/11/2025 - 01/13/2026,010270699222,J18.92,"20,475.00","8,775.00","29,250.00","February 18, 2026",,In-process,,"Ariola, Rogen Babiano",Member,0953 506 4930,"Laong Almanza I, LPC"
+,01-42-96,"Ruz, Renz Ejy Valencia",01/11/2026 - 01/14/2026,010267435346,A97.1,"13,650.00","5,850.00","19,500.00","February 18, 2026",,In-process,,"Ruz, Daisy Rey Valencia",Sister,0926 062 0269,"602 San Francisco St. Manuyo Ubo, LPC"
+,01-42-74,"Panes, Jemly Basal",01/07/2026 - 01/16/2026,190893074086,I61.9,"56,000.00","24,000.00","80,000.00","February 19, 2026",,In-process,,"Panes, Jaymel A",Daughter,0949 163 4556,"Sitio Tabon Longos, Zapote III, Bacoor, Cavite"
+,01-42-93,"Hora, Lance Matcino",01/09/2026 - 01/16/2026,010510751588,J18.92,"20,475.00","8,775.00","29,250.00","February 20, 2026",,In-process,,"Hora, Arnel Mituda",Father,0918 686 0426,"13 Naga Road, Pulang Lupa Dos, LPC"
+,01-42-99,"Garcia, Julyka Marie Zason",01/14/2026 - 01/17/2026,020275612295,A01.0,"13,650.00","5,850.00","19,500.00","February 20, 2026",,In-process,,"Garcia, Wilfredo III Zasoon",Brother,0997 311 0581,"Brgy. San Nicolas 2, Bacoor, Cavite"
+,01-43-01,"Barrientos, Pancho Azares",01/15/2026 - 01/17/2026,010270735881,M47.89,"11,329.50","4,855.50","16,185.00","February 20, 2026",,In-process,,"Barrientos, Pamela Mae",Daughter,0951 896 5101,"2667 Matapang St. CAA, LPC"
+,,"Tictic, Conchita Salazar",01/07/2026 - 01/18/2026,011751335778,J18.92,"20,475.00","8,775.00","29,250.00","February 23, 2026",,In-process,,"Tictic, Aira",Granddaughter,0927 382 3005,"#19 Narra St. Ph 7-B Gatchalian Subd. Manuyo Dos, LPC"
+,01-43-00,"Lansang, Maria Guerra",01/15/2026 - 01/18/2026,011753081838,J18.92,"20,475.00","8,775.00","29,250.00","February 23, 2026",,In-process,,"Lansang, Katlene Guerra",Daughter,0966 766 2577,"1149 catmon St, BF International, CAA, LPC"
+,01-43-06,"Manuel, Franklin Salvedia",01/18/2026 - 01/29/2026,010506632701,I10.1,"12,285.00","5,265.00","17,550.00","February 23, 2026",,In-process,,"Magbanua, Shenna Faith",Live-in Partner,0995 150 4598,"1215 F. Santos Ave. Pulang Lupa Uno, LPC"
+,01-42-97,"Lopez, Nestor Cuenca",01/13/2026 - 01/22/2026,190258107105,"Q79.2, 49587","24,570.00","16,380.00","40,950.00","February 24, 2026",,In-process,,"Lopez, Nestor Cuenca",Member,0909 915 4209,"B2 L1 Green Valley Molino 3, Bacoor, Cavite"
+,01-43-03,"Dala, Rowel Hortillano",01/16/2026 - 01/22/2026,190260860864,K27.0,"17,472.00","7,488.00",,,,,,"Dala, Rowel Jr. C.",Son,0910 793 1009,"Karlaville Parkhomes Blk 11 Lot 28 Hugo Perez, Trece Martires City, Cavite"
+,01-43-02,"Ordineza, Christopher Solis",01/15/2026 - 01/21/2026,140252923612,J18.92,"20,475.00","8,775.00",,,,,,"Solis, Melfhe",Sister,0995 968 9942,"705B Nazareth Compound, Molino 3, Bacoor City, Cavite"
+,01-43-08,"Macalinao, Jessica Valenzuela",01/19/2026 - 01/21/2026,010259399578,"O44.1, NSD01","9,282.00","3,978.00",,,,,,"Tamayo, Marlon",Live-in Partner,0947 383 8148,"01-17 Sta. Rita St. Green Valley Compound, Manuyo Dos, LPC"
+,01-43-04,"Quintos, Susana Millan",01/16/2026 - 01/21/2026,011753451392,I61.2,"56,000.00","24,000.00",,,,,,"Failadona, Shiela Marie A.",Daughter,did not give,"164 Saging St. CAA, LPC"
+,01-43-07,"Valeriano, Melvin Mark Benedicto",01/18/2026 - 01/23/2026,010270740729,R57.1,"43,680.00","18,720.00",,,,,,"Valeriano, Melvin Mark Benedicto",Son,0966 751 1087,"36 Guinto St. Manuela 4D, Pamplona, LPC"
+,01-43-11,"Balderama, Angelo Benedict Jimenez",01/23/2026 - 01/27/2026,190891239177,A97.1,"13,650.00","5,850.00",,,,,,"Balderama, Benny",Mother,0917 652 7418,"14B Meltonia St. Santos Village 3, Zapote"
+,01-43-10,"Calleja, Victoria Mago",01/26/2026 - 01/28/2026,010252682274,"A09.9 , E86.1","8,190.00","3,510.00",,,,,,"Calleja, Annabel",Daughter,0936 849 2899,"Jore Sumayo Residence Compound, St. Francis St. Brgy. Moonwalk, LPC"
+,01-43-16,"Talaro, Miraya Rue Ramos",01/29/2026 - 01/31/2026,020267465534,G40.9,"10,647.00","4,563.00",,,,,,"Ramos, Mary Rose",Mother,0948 245 0153,"1543 Maple St. CAA, LPC"
+,01-43-13,"Baybayon, Rochell Mandawe",01/27/2026 - 02/01/2026,030251392052,I24.8,"16,380.00","7,020.00",,,,,,"Baybayon, Rochell Mandawe",Member,0907 102 1676,"Unit 3 #53 Doña Manuela Subdivision, Pamplona, LPC"
+,01-43-20,"Daud, Abdulrahman Minalang",,010264284541,A09.9,"8,190.00","3,510.00",,,,,,,,,
+,01-43-22,"Abangon, Xudong M",,020273362291,A01.0,"13,650.00","5,850.00",,,,,,"Abangon, Jamila Nismal",Mother,,
+,01-40-14,"Busa, Zeke Trae Viray",,010260621810,"A09.9 , E86.1","8,190.00","3,510.00",,,,,,,,,
+,,"Ocampo, Stephanie Dawne Socorro",02/04/2026-02/06/2026,010261262334,J18.92,"20,475.00","8,775.00",,,,,,,,,
+,,"Celis, Corazon Jemenez",,011752545873,S02.4,"14,605.50","6,259.50",,,,,,,,,
+,,"Abcede, Violeta Misajon",,012504431329,I10.1,"12,285.00","5,265.00",,,,,,,,,
+,,"Panes, Jemly Basal",,190893074086,,,,,,,,,,,,
+,,"Marinay, Amarie Joy Santos",,210250755915,,,,,,,,,,,,
+,,"Magtunao, Micah Ylla Morales",,012508170368,K27.3,"8,326.50","3,568.50",,,,,,,,,
+,,"Biscante, Federico Montes",,011752435555,J18.92,"20,475.00","8,775.00",,,,,,,,,
+,,"Takeyama, Arika Mireya Obuyes",,010270787377,A01.0,"13,650.00","5,850.00",,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+STILL ADMITTED,,,,,,,,,,,,,,,,
+,,"Dela Vega, Carmen Cairo",12/13/2025 -,081754060557,I24.8,"16,380.00","7,020.00",,,,,,"Dela Vega, Aiko",Granddaughter,0977 691 4123,"10 Sunflower St. Doña Manuela, LPC"
+,,"Arellano, Dan Regan Rafael",,080267748393,"K25.0, 36450","7,800.00","3,276.00",,,,,,,,,
+,,"Lumacad, Melito Dadang",02/01/2026-,012565730507,I61.9,"56,000.00","24,000.00",,,,,,,,,
+,,"Villamer, Ace Zian Rebulado",,010260220425,"A09.9 , E86.1","8,190.00","3,510.00",,,,,,,,,
+,,"Moldez, Zane Kyvan Andrino",,030254632143,R56.0,"9,555.00","4,095.00",,,,,,,,,
+,,"Delegero, Myrna Naval",02/11/2026 -,010250770591,I10.1,"12,285.00","5,265.00",,,,,,,,,
+,,"Dolon, Eduardo Yumang",02/11/2026 -,190515821280,I61.9,"56,000.00","24,000.00",,,,,,,,,
+,,"Cazon, Arcadio Bacoy",,010270787660,I61.9,"56,000.00","24,000.00",,,,,,,,,
+,,"Bautista Jr, Manuel Isidro",02/13/2026 -,190522031570,J18.92,"20,475.00","8,775.00",,,,,,,,,
+,,"Matias, Emmanuelle Jeanne Flores",02/15/2026 -,010254598947,A97.0,"13,650.00","5,850.00",,,,,,,,,
+,,"Boneo, Michaela Leigh Ramil",,230027272679,S06.50,"12,012.00","5,148.00",,,,,,,,,
+,,"Aurella, Joemar Base",02/19/2026 -,010253224717,,,,,,,,,,,,
+,,"Magbanua, John Chris Vecera",02/17/2026,020511810338,,,,,,,,,,,,
+,,"Sanding, Sonia Villocillo",,011751573644,J90,"19,383.00","8,307.00",,,,,,"Sanding, Angelique Mae Villocillo",Daughter,0977 698 0653,"Blk 34 Lot 15B Dama de Noche St. Doña Manuela Subdivision, Pamplona Tres, LPC"
+,,"Guim, Carmelita Diaz",02/16/2026 -,192011622344,I64,"53,200.00","22,800.00",,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,SUBTOTAL,,,,,,,,,
+,,,,,,,,,,,,,,,,
+OUTPATIENT EMERGENCY CARE BENEFIT (OECB),,,,,,,,,,,,,,,,
+,,"Senosin, Reine",,,OPER1,,707,,,,,,,,,
+,,"Gaa, Exandeer Manalo",,012500285654,OPER1,,707,,,,,,,,,
+,,"Penional, amanda Lucille Florin",,,OPER1,,707,,,,,,,,,
+,,"Ampuan, Maria Pricel Deosan",,102022686639,OPER1,,707,"6,225.00",,,,,,,,
+,,"Espinosa, Elmer Villareal",02/25/2026 - 02/25/2026,081756000284,OPER1,,707,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,SUBTOTAL,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,GRAND TOTAL,,,,,,,,,

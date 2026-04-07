@@ -113,14 +113,21 @@ export default function Dashboard() {
     return Math.ceil(lastDay / 7);
   };
 
-  // Generate available years (last 5 years and current year)
+  // Generate available years based on patient confinement dates
   const availableYears = useMemo(() => {
-    const years = [];
-    for (let i = 0; i < 6; i++) {
-      years.push(now.getFullYear() - i);
+    const years = new Set<number>();
+    patients.forEach((patient) => {
+      const confinementDate = new Date(patient.confinementStart);
+      const year = confinementDate.getFullYear();
+      if (!Number.isNaN(year)) {
+        years.add(year);
+      }
+    });
+    if (years.size === 0) {
+      years.add(now.getFullYear());
     }
-    return years;
-  }, []);
+    return Array.from(years).sort((a, b) => b - a);
+  }, [patients]);
 
   const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   

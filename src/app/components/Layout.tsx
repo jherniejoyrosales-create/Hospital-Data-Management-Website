@@ -12,7 +12,11 @@ import {
   LogOut,
   ChevronRight,
   Hospital,
-  HelpCircle
+  HelpCircle,
+  FileBarChart,
+  Stethoscope,
+  Package,
+  Heart
 } from 'lucide-react';
 import { useAuth } from '../lib/auth';
 import { Badge } from './ui/badge';
@@ -26,7 +30,7 @@ import {
 } from './ui/dropdown-menu';
 import HelpDialog from './HelpDialog';
 import { toast } from 'sonner';
-import azghLogo from '../../assets/b159d69f766dbff88e66acfe582714a6dffaef22.png';
+import azghLogo from '../../hospital-logo.png.jpg';
 
 export default function Layout() {
   const location = useLocation();
@@ -54,6 +58,10 @@ export default function Layout() {
   const navigation = [
     { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
     { name: 'Patients', href: '/patients', icon: Users },
+    { name: 'ICD Codes', href: '/icd-codes', icon: FileBarChart },
+    { name: 'Z Benefits', href: '/z-benefits', icon: Package },
+    { name: 'Konsulta', href: '/konsulta-packages', icon: Stethoscope },
+    { name: 'RVS Codes', href: '/rvs-codes', icon: Heart },
     { name: 'Audit Logs', href: '/audit', icon: FileText },
     { name: 'Settings', href: '/settings', icon: Settings },
   ];

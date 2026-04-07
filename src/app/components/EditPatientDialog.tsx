@@ -48,7 +48,33 @@ export default function EditPatientDialog({ patient, onUpdatePatient }: EditPati
 
   useEffect(() => {
     setIcdSearchQuery(patient.icd10Code);
-  }, [patient.icd10Code]);
+    setFormData({
+      lastName: patient.lastName,
+      firstName: patient.firstName,
+      middleName: patient.middleName,
+      category: patient.category,
+      confinementStart: patient.confinementStart,
+      confinementEnd: patient.confinementEnd,
+      pin: patient.pin,
+      icd10Code: patient.icd10Code,
+      icd10Description: patient.icd10Description,
+      healthFacilityFee: (patient.healthFacilityFee || 0).toString(),
+      professionalFee: (patient.professionalFee || 0).toString(),
+      totalCaseRate: (patient.totalCaseRate || 0).toString(),
+      dateFiled: patient.dateFiled,
+      dateRefiled: patient.dateRefiled || '',
+      status: patient.status,
+      companionName: patient.companionName,
+      relationship: patient.relationship,
+      contactNumber: patient.contactNumber,
+      homeAddress: patient.homeAddress,
+      street: patient.street || '',
+      barangay: patient.barangay || '',
+      city: patient.city || '',
+      province: patient.province || '',
+      zipCode: patient.zipCode || '',
+    });
+  }, [patient]);
 
   const handleChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));

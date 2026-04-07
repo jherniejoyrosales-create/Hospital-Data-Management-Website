@@ -8,7 +8,7 @@ import { useAuth } from '../lib/auth';
 import { Hospital, User, Lock } from 'lucide-react';
 import { toast } from 'sonner';
 import SecurityBanner from '../components/SecurityBanner';
-import azghLogo from '../../assets/b159d69f766dbff88e66acfe582714a6dffaef22.png';
+import azghLogo from '../../hospital-logo.png.jpg';
 
 export default function Login() {
   const [username, setUsername] = useState('');

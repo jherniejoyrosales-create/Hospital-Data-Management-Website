@@ -10,7 +10,7 @@ import {
   deletePatient as deletePatientFromDB,
   subscribeToPatients,
   migrateLocalStorageToSupabase,
-  initializeDatabase
+  initializeDatabase,
 } from '../lib/database';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
@@ -22,9 +22,10 @@ import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, 
 import { Plus, Search, Filter, FileText, Download, Eye, Pencil, Trash2, Calendar, Printer, AlertCircle, X } from 'lucide-react';
 import AddPatientDialog from '../components/AddPatientDialog';
 import EditPatientDialog from '../components/EditPatientDialog';
-import BulkImportDialog from '../components/BulkImportDialog';
 import CloudStatusBanner from '../components/CloudStatusBanner';
 import { toast } from 'sonner';
+
+type PrintSize = 'a4' | 'long' | 'short';
 
 export default function Patients() {
   const { user, logAction } = useAuth();
@@ -85,30 +86,6 @@ export default function Patients() {
       toast.success('Patient added successfully!');
     } else {
       toast.error('Failed to add patient');
-    }
-  };
-
-  const handleBulkImport = async (newPatients: Omit<PatientRecord, 'id'>[]) => {
-    try {
-      const addedPatients: PatientRecord[] = [];
-      
-      for (const newPatient of newPatients) {
-        const addedPatient = await addPatientToDB(newPatient);
-        if (addedPatient) {
-          addedPatients.push(addedPatient);
-        }
-      }
-      
-      if (addedPatients.length > 0) {
-        setPatients([...addedPatients, ...patients]);
-        logAction('BULK_INSERT', 'Patients', `Bulk imported ${addedPatients.length} patient records`);
-        toast.success(`Successfully imported ${addedPatients.length} patients!`);
-      } else {
-        toast.error('Failed to import patients');
-      }
-    } catch (error) {
-      console.error('Bulk import error:', error);
-      toast.error('Error importing patients');
     }
   };
 
@@ -190,9 +167,37 @@ export default function Patients() {
     toast.success('Patient records exported successfully');
   };
 
-  const handlePrint = () => {
-    logAction('PRINT', 'Patient Records', 'Printed patient records list');
+  const injectPrintStyle = (printSize: PrintSize) => {
+    const styleId = 'custom-print-size';
+    let styleElement = document.getElementById(styleId) as HTMLStyleElement | null;
+
+    if (!styleElement) {
+      styleElement = document.createElement('style');
+      styleElement.id = styleId;
+      document.head.appendChild(styleElement);
+    }
+
+    const pageRule = printSize === 'long'
+      ? '@page { size: 8.5in 13in; margin: 0.4cm; }'
+      : printSize === 'short'
+        ? '@page { size: 8.5in 11in; margin: 0.4cm; }'
+        : '@page { size: A4 portrait; margin: 0.4cm; }';
+
+    styleElement.textContent = `@media print { ${pageRule} }`;
+  };
+
+  const removePrintStyle = () => {
+    const styleElement = document.getElementById('custom-print-size');
+    if (styleElement) {
+      styleElement.remove();
+    }
+  };
+
+  const handlePrint = (paperSize: PrintSize) => {
+    injectPrintStyle(paperSize);
+    logAction('PRINT', 'Patient Records', `Printed patient records list (${paperSize.toUpperCase()})`);
     window.print();
+    setTimeout(removePrintStyle, 1000);
     toast.success('Print dialog opened');
   };
 
@@ -246,13 +251,44 @@ export default function Patients() {
           {(user?.role === 'admin' || user?.role === 'doctor') && (
             <>
               <AddPatientDialog onAddPatient={handleAddPatient} />
-              <BulkImportDialog onImportPatients={handleBulkImport} />
             </>
           )}
-          <Button variant="outline" onClick={handlePrint} className="flex items-center gap-2 border-[#2196F3] text-[#2196F3] hover:bg-[#E3F2FD]">
-            <Printer className="h-4 w-4" />
-            Print
-          </Button>
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button variant="outline" className="flex items-center gap-2 border-[#2196F3] text-[#2196F3] hover:bg-[#E3F2FD]">
+                <Printer className="h-4 w-4" />
+                Print
+              </Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Choose paper size</AlertDialogTitle>
+                <AlertDialogDescription>
+                  Select the paper size before printing: A4, long, or short.
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+              <div className="grid gap-3 py-4">
+                <AlertDialogAction asChild>
+                  <Button onClick={() => handlePrint('a4')} className="w-full">
+                    A4
+                  </Button>
+                </AlertDialogAction>
+                <AlertDialogAction asChild>
+                  <Button onClick={() => handlePrint('long')} className="w-full">
+                    Long
+                  </Button>
+                </AlertDialogAction>
+                <AlertDialogAction asChild>
+                  <Button onClick={() => handlePrint('short')} className="w-full">
+                    Short
+                  </Button>
+                </AlertDialogAction>
+              </div>
+              <AlertDialogFooter>
+                <AlertDialogCancel>Cancel</AlertDialogCancel>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
           <Button onClick={handleExport} className="flex items-center gap-2 bg-[#4CAF50] hover:bg-[#388E3C] text-white">
             <Download className="h-4 w-4" />
             Export CSV
